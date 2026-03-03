@@ -1,44 +1,65 @@
 .guide-detail {
-  max-width: 800px;
+  max-width: 640px;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 20px 16px 32px;
 }
 
 .guide-detail-header {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .guide-detail-header h1 {
-  font-size: 1.8rem;
-  color: #1a1a1a;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7ab0e0;
+  margin-top: 4px;
 }
 
+/* LCD display style for section content */
 .guide-detail-main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 
 .guide-section {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  background-color: #c8d6b0;
+  border: 2px solid #3a4060;
+  border-radius: 3px;
+  padding: 16px 18px;
+  box-shadow:
+    inset 0 1px 6px rgba(0,0,0,0.35),
+    0 2px 0 #0a0f1a;
 }
 
 .guide-section h2 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  color: #0066cc;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #2060a0;
+  margin-bottom: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  border-bottom: 1px solid #8a9a78;
+  padding-bottom: 4px;
 }
 
 .guide-section p {
   line-height: 1.7;
-  color: #555;
+  color: #1e2e08;
+  font-size: 0.92rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .not-found {
-  padding: 24px;
-  color: #888;
-  font-size: 1rem;
+  background-color: #c8d6b0;
+  border: 2px solid #3a4060;
+  border-radius: 3px;
+  padding: 20px;
+  color: #4a5a30;
+  font-size: 0.9rem;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: inset 0 1px 6px rgba(0,0,0,0.35);
 }

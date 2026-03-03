@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Guides from './pages/Guides';
 import GuideDetail from './pages/GuideDetail';
+import Header from './components/Header';
 import './styles/App.css';
 
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/guides" element={<Guides />} />

@@ -1,31 +1,56 @@
+/* ===== CASIO fx-JP900 color tokens ===== */
+/* Body:     #1a2540  deep navy              */
+/* Display:  #c8d6b0  LCD green-cream bg     */
+/* Disp txt: #1e2e08  dark green LCD text    */
+/* Key base: #2a3558  dark blue-gray         */
+/* Key text: #e0e8f0  light blue-white       */
+/* Shift:    #e04010  orange (SHIFT key)     */
+/* Alpha:    #2060a0  blue (ALPHA key)       */
+/* Gold:     #b09020  model name accent      */
+/* Silver:   #b0b8c8  trim line              */
+
 a {
-  color: #0066cc;
+  color: #7ab0e0;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
-}
-
-.btn-primary {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #0066cc;
-  color: #fff;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background-color 0.2s;
-}
-
-.btn-primary:hover {
-  background-color: #0052a3;
+  color: #e04010;
   text-decoration: none;
 }
 
+/* Primary button — SHIFT-key orange */
+.btn-primary {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #e04010;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  border: 2px solid #ff6030;
+  box-shadow: 0 4px 0 #901800, 0 5px 8px rgba(0,0,0,0.4);
+  transition: transform 0.08s, box-shadow 0.08s;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #901800, 0 3px 6px rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+/* Back navigation link — subtle key style */
 .back-link {
   display: inline-block;
   margin-bottom: 16px;
-  color: #0066cc;
-  font-size: 0.9rem;
+  color: #7ab0e0;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.back-link:hover {
+  color: #e04010;
 }

@@ -1,0 +1,63 @@
+/* Top branding bar — mimics CASIO fx-JP900 top face */
+.calc-header {
+  background: linear-gradient(180deg, #1e2d4e 0%, #1a2540 100%);
+  border-bottom: 3px solid #b09020;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.calc-header-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 10px 16px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calc-brand {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #b09020;
+  font-style: italic;
+}
+
+.calc-model-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calc-model-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #e0e8f0;
+  line-height: 1;
+}
+
+.calc-model-sub {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #7ab0e0;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.calc-series {
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: #7ab0e0;
+  font-weight: 500;
+  text-align: right;
+}
+
+/* Silver trim line at bottom of header */
+.calc-header-trim {
+  height: 3px;
+  background: linear-gradient(90deg, #1a2540, #b0b8c8 20%, #e8eef4 50%, #b0b8c8 80%, #1a2540);
+}
