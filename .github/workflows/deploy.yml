@@ -26,13 +26,21 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    # 4. Set Git user identity
+    # 4. Authenticate GitHub
+    - name: Authenticate GitHub
+      run: |
+        git config --global url."https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/".insteadOf "https://github.com/"
+        git config --global --add safe.directory /github/workspace
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    # 5. Set Git user identity
     - name: Set Git user
       run: |
         git config --global user.name "bjcrobot"
         git config --global user.email "bjcrobot@gmail.com"
 
-    # 5. Build and Deploy
+    # 6. Build and Deploy
     - name: Build and Deploy
       run: |
         npm run build
