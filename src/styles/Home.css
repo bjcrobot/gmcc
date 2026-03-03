@@ -1,0 +1,44 @@
+.home {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.home-header {
+  text-align: center;
+  padding: 48px 0 32px;
+}
+
+.home-header h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.home-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.home-intro {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-intro h2 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.home-intro p {
+  line-height: 1.7;
+  color: #555;
+}
+
+.home-links {
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+.guide-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.guide-detail-header {
+  margin-bottom: 24px;
+}
+
+.guide-detail-header h1 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+}
+
+.guide-detail-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.guide-section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.guide-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #0066cc;
+}
+
+.guide-section p {
+  line-height: 1.7;
+  color: #555;
+}
+
+.not-found {
+  padding: 24px;
+  color: #888;
+  font-size: 1rem;
+}
