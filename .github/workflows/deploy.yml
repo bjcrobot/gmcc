@@ -26,7 +26,13 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    # 4. Build and Deploy
+    # 4. Set Git user identity
+    - name: Set Git user
+      run: |
+        git config --global user.name "bjcrobot"
+        git config --global user.email "bjcrobot@gmail.com"
+
+    # 5. Build and Deploy
     - name: Build and Deploy
       run: |
         npm run build
