@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gmcc/static/css/main.253cf473.css",
+    "main.js": "/gmcc/static/js/main.e0a8ee00.js",
+    "index.html": "/gmcc/index.html",
+    "main.253cf473.css.map": "/gmcc/static/css/main.253cf473.css.map",
+    "main.e0a8ee00.js.map": "/gmcc/static/js/main.e0a8ee00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.253cf473.css",
+    "static/js/main.e0a8ee00.js"
+  ]
+}

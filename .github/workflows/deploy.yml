@@ -1,0 +1,50 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment on pushes to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    # 1. Check out the repository
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # 2. Set up Node.js
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    # 3. Install dependencies
+    - name: Install dependencies
+      run: npm install
+
+    # 4. Authenticate GitHub
+    - name: Authenticate GitHub
+      run: |
+        git config --global url."https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/".insteadOf "https://github.com/"
+        git config --global --add safe.directory /github/workspace
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    # 5. Set Git user identity
+    - name: Set Git user
+      run: |
+        git config --global user.name "bjcrobot"
+        git config --global user.email "bjcrobot@gmail.com"
+
+    # 6. Build and Deploy
+    - name: Build and Deploy
+      run: |
+        npm run build
+        npm run deploy
+      env:
+        CI: false
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

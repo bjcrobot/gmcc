@@ -1,0 +1,9 @@
+{
+  "short_name": "関数電卓ガイド",
+  "name": "関数電卓ガイドアプリ",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
